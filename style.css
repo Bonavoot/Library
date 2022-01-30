@@ -1,0 +1,218 @@
+html {
+
+    background-color: #c5d5cb;
+
+}
+
+body {
+    height: 100vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    width: 1330px;
+    height: 100px;
+    background-color: rgb(26, 26, 26);
+}
+
+#header_name {
+    margin-left: 10px;
+    text-align: center;
+
+    color: #9fa89f;
+    font-size: 40pt;
+    font-family: Times, 'Times New Roman', serif;
+}
+
+
+/*
+  Book content 
+  */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 230px;
+    gap: 20px;
+    border: black solid 2px;
+    background-color: #e3e0cf;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 10px;
+}
+
+.bookDisplay {
+    display: flex;
+    gap: 40px;
+    margin-left: 70px;
+    align-self: flex-start;
+    justify-self: center;
+    margin-top: 30px;
+    word-break: break-all;
+    font-weight: 600;
+    flex-wrap: wrap;
+    max-width: 1350px;
+}
+
+
+
+
+
+.title,
+.author,
+.pages,
+.answer {
+    font-family: Times, 'Times New Roman', serif;
+    word-break: break-word;
+
+}
+
+.title {
+    border: black solid 4px;
+    text-align: center;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    padding: 4px;
+}
+
+.author {}
+
+.pages {
+    font-size: smaller;
+}
+
+.read {
+    margin-bottom: -27px;
+    height: 50px;
+    width: 18px;
+}
+
+
+.answer {
+    font-size: small;
+}
+
+.remove {
+    margin-right: 5px;
+    margin-top: -28px;
+    align-self: flex-end;
+    background-color: #9fa89f;
+    border: black solid 1px;
+    font-size: large;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.remove:hover {
+    color: rgb(255, 22, 22);
+
+}
+
+
+/* 
+Add Book Button 
+*/
+
+#addBook {
+    align-self: flex-end;
+    margin-top: 680px;
+    font-size: 30pt;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    color: rgb(255, 255, 255);
+    border: black solid 1px;
+    background-color: #7789f0;
+    position: fixed;
+    margin-right: 20px;
+}
+
+#addBook:hover {
+    background-color: #8cc0ff;
+
+}
+
+/*
+  Add book form content 
+*/
+
+.headText {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 30pt;
+    color: rgb(0, 0, 0);
+
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    align-self: center;
+    margin-top: 150px;
+    margin-right: 50px;
+
+}
+
+#form {
+    display: flex;
+    height: 470px;
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    background-color: #9fa89f;
+}
+
+#titles,
+#author,
+#page {
+    height: 35px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: black solid 2px;
+}
+
+.readQ {
+    margin-left: 55px;
+    color: rgb(0, 0, 0);
+}
+
+#read {
+    margin-top: 50px;
+    border: black solid 2px;
+
+}
+
+
+.submit {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+#submit {
+    font-size: large;
+    font-weight: 500;
+    width: 200px;
+    background-color: #7789f0;
+    color: white;
+    border: black solid 2px;
+
+}
+
+#submit:hover {
+    background-color: #8cc0ff;
+
+}
