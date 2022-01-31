@@ -64,7 +64,7 @@ function createBook(item) {
     // Remove button
     remove.addEventListener('click', () => {
         myLibrary.pop(myLibrary[dom.className]);
-        newContainer.remove(dom.className)
+        dom.remove(dom.className);
     })
 
     // read/not read button needs work
