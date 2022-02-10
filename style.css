@@ -1,16 +1,16 @@
 html {
-
+    position: relative;
     background-color: #c5d5cb;
 
 }
 
 body {
+    position: relative;
     height: 100vw;
-    width: 100vw;
+
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
 }
 
 
@@ -18,9 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 70px;
-    width: 1330px;
-    height: 100px;
+    width: min(100% - 50px);
     background-color: rgb(26, 26, 26);
 }
 
@@ -29,7 +27,7 @@ body {
     text-align: center;
 
     color: #9fa89f;
-    font-size: 40pt;
+    font-size: 3rem;
     font-family: Times, 'Times New Roman', serif;
 }
 
@@ -40,6 +38,7 @@ body {
 
 .container {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -54,7 +53,7 @@ body {
 .bookDisplay {
     display: flex;
     gap: 40px;
-    margin-left: 70px;
+    margin-left: 75px;
     align-self: flex-start;
     justify-self: center;
     margin-top: 30px;
@@ -68,21 +67,25 @@ body {
 
 
 
-.title,
+
 .author,
 .pages,
 .answer {
+    color: rgb(82, 82, 82);
     font-family: Times, 'Times New Roman', serif;
     word-break: break-word;
+
 
 }
 
 .title {
-    border: black solid 4px;
+    font-family: Times, 'Times New Roman', serif;
+    word-break: break-word;
     text-align: center;
     font-size: x-large;
     color: rgb(0, 0, 0);
-    padding: 4px;
+    max-width: 200px;
+    margin-top: 20px;
 }
 
 .author {}
@@ -103,9 +106,10 @@ body {
 }
 
 .remove {
-    margin-right: 5px;
-    margin-top: -28px;
-    align-self: flex-end;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
     background-color: #9fa89f;
     border: black solid 1px;
     font-size: large;
@@ -124,17 +128,17 @@ Add Book Button
 */
 
 #addBook {
-    align-self: flex-end;
-    margin-top: 680px;
-    font-size: 30pt;
+    font-size: 3rem;
     height: 60px;
     width: 60px;
-    border-radius: 60px;
+    border-radius: 50%;
     color: rgb(255, 255, 255);
     border: black solid 1px;
     background-color: #7789f0;
     position: fixed;
-    margin-right: 20px;
+    bottom: 10px;
+    right: 10px;
+
 }
 
 #addBook:hover {
@@ -155,22 +159,19 @@ Add Book Button
 }
 
 .left {
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    align-self: center;
-    margin-top: 150px;
-    margin-right: 50px;
-
+    top: 150px;
 }
 
 #form {
-    display: flex;
+
     height: 470px;
     width: 320px;
-    justify-content: center;
-    align-items: center;
+
     border: solid black 2px;
     background-color: #9fa89f;
 }
@@ -212,7 +213,13 @@ Add Book Button
 
 }
 
-#submit:hover {
+#reset {
+    width: 100px;
+
+}
+
+#submit:hover,
+#reset:hover {
     background-color: #8cc0ff;
 
 }
