@@ -16,34 +16,23 @@
         <div class="bookDisplay">
         </div>
         <div class="left">
-            <div id="form" style="display: none;">
-               <div class="headText">ADD BOOK</div> 
-            <div>
-               <label for="titles"></label>
-               <input id="titles" name="titles" placeholder="Title" type="text" required>
-                </div>
-           <div>
-               <label for="author"></label>
-               <input id="author" name="author" placeholder="Author" type="text" required>
-           </div>
-           <div>
-               <label for="page"></label>
-               <input id="page" name="page" placeholder="Pages" type="number" min="1">
-           </div>
-           <div>
-            <label class="readQ" for="read">Have you read this?</label>
-            <select id="read" name="read">
-              <option value="read">Read</option>
-              <option value="not read">Not Read</option>
-            </select>
-           </div>
-           <div class="submit">
-               <button id="submit" type="submit" form="form">SUBMIT</button>
-           </div>
+            <form novalidate id="form" style="display: none;">
+                    <div class="headText">ADD BOOK</div> 
+                    <label for="titles"></label>
+                    <input id="titles" name="titles" placeholder="Title" type="text" required >
+                    <label for="author"></label>
+                    <input id="author" name="author" placeholder="Author" type="text" required>
+                    <label for="page"></label>
+                    <input id="page" name="page" placeholder="Pages" type="number" min="1" required>
+                 <label class="readQ" for="read">Have you read this?</label>
+                 <select id="read" name="read">
+                   <option value="read">Read</option>
+                   <option value="not read">Not Read</option>
+                 </select>
+                    <button class="submit" id="submit" type="button" form="form">SUBMIT</button>
+            </form>
         </div>
     </div>     
     </body>
     <button id="addBook">+</button>
-    
-
 </html>
